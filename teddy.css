@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.team {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.team-card {
+    text-align: left;
+}
+
+.img-box {
+    width: 200px;
+    height: 200px;
+    background: #f3f3f3;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* image box ke andar fit rahegi */
+}
+
+.team-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.team-card span {
+    font-size: 14px;
+    color: #777;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Header Styles */
+.header h1 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.header p {
+  color: #4b5563;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 48px auto;
+}
+
+/* Grid Layout */
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  background-color: #f3f4f6;
+  flex: 1 1 calc(50% - 16px); /* Two columns on desktop */
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  border-radius: 4px;
+  text-align: left;
+}
+
+/* Icon Styling */
+.icon {
+  color: #b7b8cc;
+  background: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+  border: 2px solid #b7b7cf;
+}
+
+.icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.text {
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Button Styling */
+.button-wrapper {
+  margin-top: 40px;
+}
+
+.main-button {
+  background-color: #b0b0c2;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.main-button:hover {
+  background-color: #8f8eb3;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  .feature-item {
+    flex: 1 1 100%;
+  }
+}
